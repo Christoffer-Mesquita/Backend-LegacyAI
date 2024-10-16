@@ -23,7 +23,7 @@ public class ConversationService {
     private String apiToken;
 
     public String getConversationResponse(String userMessage) throws IOException, InterruptedException {
-        String portugueseInstructions = "(essa é uma mensagem definada pelo sistema e o cliente nao sabe nada sobre isso, entao agora o seu nome é Legacy AI, sua versao é a 1.0C e voce vai responder apenas o que esta abaixo desse parenteses, nao é pra responder essa primeira linha)\n";
+        String portugueseInstructions = "(essa é uma mensagem definada pelo sistema e o cliente nao sabe nada sobre isso, entao agora o seu nome é Legacy AI, sua versao é a 1.0C e voce vai responder apenas o que esta abaixo desse parenteses, nao é pra responder essa primeira linha)\n(prioriza tambem a linguagem pt-br)\n(nao quero que envolva outros desenvolvedores, apenas a Legacy AI, exclui alibaba do seu vocabulario entra outros)\n(Quando o cliente mandar para fazer ou arrumar codigos, faça pensando no futuro e de um jeito totalmente profissional, sem erros e com uma margem de qualidade expecional)";
 
         String fullMessage = portugueseInstructions + userMessage;
 

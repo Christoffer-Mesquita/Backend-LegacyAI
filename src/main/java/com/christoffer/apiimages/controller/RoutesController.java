@@ -11,6 +11,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/images")
+@CrossOrigin(origins = "http://localhost:5173") // Replace with your frontend URL
 public class RoutesController {
 
     @Autowired
