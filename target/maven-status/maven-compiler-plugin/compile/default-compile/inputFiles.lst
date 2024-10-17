@@ -1,0 +1,13 @@
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\ApiImagesApplication.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\controller\AuthController.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\controller\dto\LoginRequest.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\controller\dto\RegistrationRequest.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\controller\RoutesController.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\model\Role.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\model\User.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\repository\RoleRepository.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\repository\UserRepository.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\security\SecurityConfig.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\service\AI\ConversationService.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\service\AI\RoutesService.java
+C:\Users\igorn\Documents\PROGRAMACAO VS.CODE\Projetos Back-End APIs + CRUD\Backend-LegacyAI\src\main\java\com\christoffer\apiimages\service\CustomUserDetailsService.java
