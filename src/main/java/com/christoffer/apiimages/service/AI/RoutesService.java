@@ -21,7 +21,6 @@ public class RoutesService {
     }
 
     public byte[] generateimageFromPrompt(String prompt) throws IOException, InterruptedException {
-        logger.info("Generating image for prompt: {}", prompt);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -34,13 +33,11 @@ public class RoutesService {
         HttpResponse<byte[]> response = client.send(request, HttpResponse.BodyHandlers.ofByteArray());
 
         int statusCode = response.statusCode();
-        logger.info("Hugging Face API response: status code = {}", statusCode);
 
         if (statusCode == 200) {
-            logger.info("Image generated successfully.");
             return response.body();
         } else {
-            String errorMessage = "Error generating image. Status code: " + statusCode +
+            String errorMessage = "Erro: " + statusCode +
                     ", Response body: " + new String(response.body());
             logger.error(errorMessage);
             throw new IOException(errorMessage);
