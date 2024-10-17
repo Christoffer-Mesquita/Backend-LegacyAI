@@ -7,7 +7,7 @@ A API fornece endpoints para autenticação de usuários e geração de conteúd
 
 ##### 1. Autenticação e Gerenciamento de Usuários
 
-- **POST /api/users/register**
+- **POST /api/images/register**
   - **Descrição**: Registra um novo usuário.
   - **Corpo da solicitação**:
     ```json
@@ -22,7 +22,7 @@ A API fornece endpoints para autenticação de usuários e geração de conteúd
     - **Status 201 Created**: Retorna os dados do usuário registrado.
     - **Status 400 Bad Request**: Retorna uma mensagem de erro se os dados fornecidos forem inválidos.
 
-- **POST /api/users/login**
+- **POST /api/images/login**
   - **Descrição**: Realiza o login de um usuário.
   - **Corpo da solicitação**:
     ```json
@@ -35,7 +35,7 @@ A API fornece endpoints para autenticação de usuários e geração de conteúd
     - **Status 200 OK**: Retorna um token JWT.
     - **Status 400 Bad Request**: Retorna uma mensagem de erro se as credenciais forem inválidas.
 
-- **GET /api/users/profile**
+- **GET /api/images/profile**
   - **Descrição**: Obtém os dados do perfil do usuário autenticado.
   - **Cabeçalhos**:
     - `Authorization: Bearer <token>`
@@ -45,12 +45,12 @@ A API fornece endpoints para autenticação de usuários e geração de conteúd
 
 ##### 2. Interação com IA
 
-- **GET /api/ia/version**
+- **GET /api/images/version**
   - **Descrição**: Retorna a versão da API.
   - **Resposta**:
     - **Status 200 OK**: Retorna a versão da API.
 
-- **POST /api/ia/generateImage**
+- **POST /api/images/generateImage**
   - **Descrição**: Gera uma imagem a partir de um prompt de texto.
   - **Corpo da solicitação**:
     ```plaintext
@@ -60,7 +60,7 @@ A API fornece endpoints para autenticação de usuários e geração de conteúd
     - **Status 200 OK**: Retorna a imagem gerada no formato `image/png`.
     - **Status 500 Internal Server Error**: Retorna uma mensagem de erro se a geração falhar.
 
-- **POST /api/ia/generateText**
+- **POST /api/images/generateText**
   - **Descrição**: Gera uma resposta de texto a partir de um prompt de texto.
   - **Corpo da solicitação**:
     ```plaintext
@@ -75,7 +75,7 @@ A API fornece endpoints para autenticação de usuários e geração de conteúd
 ##### Registro de Usuário
 
 ```bash
-curl -X POST http://localhost:8080/api/users/register \
+curl -X POST http://localhost:8080/api/images/register \
 -H "Content-Type: application/json" \
 -d '{
   "username": "john_doe",
@@ -88,7 +88,7 @@ curl -X POST http://localhost:8080/api/users/register \
 ##### Login de Usuário
 
 ```bash
-curl -X POST http://localhost:8080/api/users/login \
+curl -X POST http://localhost:8080/api/images/login \
 -H "Content-Type: application/json" \
 -d '{
   "username": "john_doe",
@@ -99,14 +99,14 @@ curl -X POST http://localhost:8080/api/users/login \
 ##### Visualização de Perfil
 
 ```bash
-curl -X GET http://localhost:8080/api/users/profile \
+curl -X GET http://localhost:8080/api/images/profile \
 -H "Authorization: Bearer <token>"
 ```
 
 ##### Geração de Imagem
 
 ```bash
-curl -X POST http://localhost:8080/api/ia/generateImage \
+curl -X POST http://localhost:8080/api/images/generateImage \
 -H "Content-Type: text/plain" \
 -d 'Uma bela paisagem'
 ```
@@ -114,7 +114,7 @@ curl -X POST http://localhost:8080/api/ia/generateImage \
 ##### Geração de Texto
 
 ```bash
-curl -X POST http://localhost:8080/api/ia/generateText \
+curl -X POST http://localhost:8080/api/images/generateText \
 -H "Content-Type: text/plain" \
 -d 'Escreva um poema sobre a natureza'
 ```
@@ -126,4 +126,3 @@ curl -X POST http://localhost:8080/api/ia/generateText \
 #### Considerações Finais
 - **Handing de Erros**: A API retorna códigos de status HTTP apropriados e mensagens de erro claras.
 - **Melhores Práticas**: Use sempre HTTPS para garantir a segurança das comunicações.
-- **Documentação**: Mantenha a documentação atualizada para facilitar o uso da API por desenvolvedores.
